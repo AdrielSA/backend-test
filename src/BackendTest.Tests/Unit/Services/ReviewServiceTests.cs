@@ -136,9 +136,5 @@ public class ReviewServiceTests : IDisposable
         result.Should().HaveCount(2);
     }
 
-    public void Dispose() 
-    {
-        _context.Dispose();
-        GC.SuppressFinalize(this);
-    }
+    public void Dispose() => GC.SuppressFinalize(this);
 }
