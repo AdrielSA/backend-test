@@ -210,5 +210,9 @@ public class MovieServiceTests : IDisposable
         result.Items.First().Genre.Should().Be("Acción");
     }
 
-    public void Dispose() => GC.SuppressFinalize(this);
+    public void Dispose() 
+    {
+        _context.Dispose();
+        GC.SuppressFinalize(this);
+    }
 }
