@@ -38,6 +38,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: backendtest-api
+    command: ["dotnet", "BackendTest.Api.dll", "--seed"]
     ports:
       - "5000:8080"
     environment:
