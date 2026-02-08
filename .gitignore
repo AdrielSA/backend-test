@@ -45,11 +45,15 @@ bld/
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
 
+# Claude AI assistant files
+.claude/
+
 # Visual Studio 2017 auto generated files
 Generated\ Files/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
+TestResults/
 [Bb]uild[Ll]og.*
 *.trx
 
